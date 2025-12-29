@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>AI Tools Hub - Tools</title>
+   <link rel="icon" href="cute-robot-logo-2c42937a-c1fe-493a-b639-d22a0b5f4671.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to AI Tools Hub</h1>
+    <p id="user-info"></p>
+    <button id="logout-button">Logout</button>
+  </div>
+
+  <div class="filter-section">
+    <input id="searchInput" type="text" placeholder="🔍 Search AI tools..." />
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="Video Editing">Video Editing</option>
+      <option value="Speech">Speech</option>
+      <option value="Coding">Coding</option>
+      <option value="Animation">Animation</option>
+      <option value="Photo Editing">Photo Editing</option>
+      <option value="General AI">General AI</option>
+      <option value="Design">Design</option>
+      <option value="Productivity">Productivity</option>
+    </select>
+  </div>
+
+  <div id="tools-list"></div>
+
+  <div class="pagination">
+    <button id="prev-button">⬅ Previous</button>
+    <button id="next-button">Next ➡</button>
+  </div>
+  <p id="page-indicator"></p>
+
+  <script src="js/tools-data.js"></script>
+  <script src="js/tools.js"></script>
+</body>
+</html>
